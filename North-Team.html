@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b10">
+  <title>Kolaborasi North is Invisible</title>
+
+  <style>
+    :root {
+      --bg: #080b10;
+      --card: #111820;
+      --text: #f4f7f8;
+      --muted: #a4afb8;
+      --accent: #68f0b3;
+      --border: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 48px 20px;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(40, 130, 95, 0.18), transparent 38%),
+        var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      width: min(100%, 960px);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .north-logo {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 22px;
+      overflow: hidden;
+      border: 2px solid var(--accent);
+      border-radius: 50%;
+      background: var(--card);
+      box-shadow: 0 0 35px rgba(104, 240, 179, 0.15);
+    }
+
+    .north-logo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-family: monospace;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 10px 0 12px;
+      font-size: clamp(32px, 7vw, 54px);
+      letter-spacing: -0.05em;
+    }
+
+    .intro {
+      max-width: 580px;
+      margin: 0 auto;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .divider {
+      width: 70px;
+      height: 2px;
+      margin: 34px auto;
+      background: var(--accent);
+    }
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: clamp(22px, 4vw, 30px);
+    }
+
+    .teams {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      text-align: left;
+    }
+
+    .team-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--card);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+    }
+
+    /*
+      Gambar mengikuti ukuran aslinya.
+      Tidak ada tinggi tetap, padding, atau pemotongan.
+    */
+    .team-image {
+      width: 100%;
+      line-height: 0;
+      background: transparent;
+    }
+
+    .team-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background: transparent;
+    }
+
+    .team-info {
+      padding: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .team-info h3 {
+      margin-bottom: 7px;
+      font-size: 20px;
+      overflow-wrap: anywhere;
+    }
+
+    .team-info p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 10px;
+      border: 1px solid rgba(104, 240, 179, 0.35);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 38px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 36px 16px;
+      }
+
+      .north-logo {
+        width: 125px;
+        height: 125px;
+      }
+
+      .teams {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="north-logo">
+      <img
+        src="https://i.ibb.co/zVh0ZSp2/436c9b94-65f0-449c-b304-81e154876841.jpg"
+        alt="Logo North is Invisible"
+      >
+    </div>
+
+    <p class="eyebrow">North is Invisible</p>
+    <h1>Kolaborasi Bersama</h1>
+    <p class="intro">
+      Kami percaya komunitas yang kuat tumbuh melalui kerja sama.
+      Berikut team yang berkolaborasi bersama North is Invisible.
+    </p>
+
+    <div class="divider"></div>
+
+    <section aria-labelledby="teams-title">
+      <h2 id="teams-title">Team yang Berkolaborasi</h2>
+
+      <div class="teams">
+        <article class="team-card">
+          <div class="team-image">
+            <img
+              src="https://i.ibb.co/nqX4RTpN/91d7eb42-ea36-44b4-9863-aeea89c9c595.jpg"
+              alt="Logo NightStrom404"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="team-info">
+            <h3>NightStrom404</h3>
+            <p>Partner kolaborasi North is Invisible.</p>
+            <span class="badge">Partner North</span>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-image">
+            <img
+              src="https://i.ibb.co/1tSbxJLM/d5ba0b0d-a4ff-492e-a43f-1031d0199a09.jpg"
+              alt="Logo Underground-net"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="team-info">
+            <h3>Underground-net</h3>
+            <p>Partner kolaborasi North is Invisible.</p>
+            <span class="badge">Partner North</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> North is Invisible · Bertumbuh bersama
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+  </html>
